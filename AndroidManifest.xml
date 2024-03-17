@@ -5135,5 +5135,32 @@
             android:excludeFromRecents="true"
             android:taskAffinity="com.android.settings.applock"
             android:launchMode="singleTask" />
+            
+        <!-- Lockscreen Settings -->
+        <activity android:name="Settings$PersonalizationsLockscreenActivity"
+                  android:label="@string/lockscreen_title"
+                  android:icon="@drawable/ic_lock_outline"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.crdroid.settings.fragments.LockScreen" />
+        </activity>
+
+        <!-- ToolBox Settings -->
+        <activity android:name="Settings$PersonalizationsToolboxActivity"
+                  android:label="@string/toolbox_title"
+                  android:icon="@drawable/ic_settings_cogs"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.crdroid.settings.fragments.Toolbox" />
+        </activity>
+
+        <!-- Themes Settings -->
+        <activity android:name="Settings$PersonalizationsThemesActivity"
+                  android:label="@string/themes_title"
+                  android:icon="@drawable/ic_color_bucket"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.crdroid.settings.fragments.Themes" />
+        </activity>
     </application>
 </manifest>
